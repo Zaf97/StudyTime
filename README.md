@@ -1,3 +1,3 @@
-"# StudyTime" 
+# StudyTime
 
 StudyTime
