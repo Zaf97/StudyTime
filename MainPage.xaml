@@ -1,0 +1,36 @@
+﻿<Page
+    x:Class="studytime.MainPage"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:studytime"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    mc:Ignorable="d">
+
+    <Grid Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
+        <Grid x:Name="MainGrid" Background="Tomato">
+
+            <TextBox x:Name="Subject_box" HorizontalAlignment="Center" Margin="0,140,0,0" Background="Tomato" PlaceholderText="Set your subject" BorderBrush="Gray" Opacity="0.8" VerticalAlignment="Top" TextChanged="Subject_TextChanged"/>
+            <TextBlock x:Name="timer_box" HorizontalAlignment="Center" Margin="0,188,0,0" TextWrapping="Wrap" 
+                 VerticalAlignment="Top" FontSize="100"  TextAlignment="Center"/>
+            <Image x:Name="TimerImg" Width="170" Source="Assets\timer.png" VerticalAlignment="Center" HorizontalAlignment="Center" Opacity="0.8" />
+            <AppBarButton x:Name="startBtn" HorizontalAlignment="Center" VerticalAlignment="Center"  Margin="0,250,0,0" Width="30" Height="35" Icon="Play"  Click="startBtn_Click" Visibility="Visible"></AppBarButton>
+            <AppBarButton x:Name="stopBtn" HorizontalAlignment="Center" VerticalAlignment="Center" Margin="0,250,0,0" Icon="Pause" Click="stopBtn_Click" Visibility="Collapsed"></AppBarButton>
+
+            <Image x:Name="mainreg" Visibility="Visible" Source="Assets\Get ready (2).png" VerticalAlignment="Bottom" HorizontalAlignment="Center" Height="100" Margin="0,420,0,0"></Image>
+
+        </Grid>
+
+        <CommandBar Opacity="0.7">
+            <AppBarButton Icon="Setting" Label="Settings" Click="Settingbtn_Click" ></AppBarButton>
+            <AppBarButton Icon="People" Label="Log in" Click="AppBarButton_Click"></AppBarButton>
+            <AppBarButton Icon="Calendar" Label="Statistics" Click="AppBarButton_Click_1"></AppBarButton>
+
+            <CommandBar.SecondaryCommands>
+                <AppBarButton Icon="Help" Label="About" Click="AppBarButton_Click_2"></AppBarButton>
+            </CommandBar.SecondaryCommands>
+        </CommandBar>
+
+    </Grid>
+
+</Page>

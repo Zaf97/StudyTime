@@ -1,0 +1,2 @@
+MainPackage=C:\Users\Zaf\Documents\Visual Studio 2015\Projects\studytime\studytime\bin\ARM\Release\studytime_1.0.7.0_ARM.appx
+SymbolPackage=C:\Users\Zaf\Documents\Visual Studio 2015\Projects\studytime\studytime\AppPackages\studytime_1.0.7.0_Test\studytime_1.0.7.0_ARM.appxsym

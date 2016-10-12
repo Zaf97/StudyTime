@@ -1,0 +1,29 @@
+﻿<Page 
+    x:Class="studytime.Settings_Page"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:studytime"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    mc:Ignorable="d">
+
+    <Grid Background="CadetBlue" >
+
+        <TextBlock Text="set the study time:" FontSize="20" VerticalAlignment="Top" HorizontalAlignment="Center" Margin="0,90,100,0"></TextBlock>
+        <TextBox x:Name="setTime" Text="45" HorizontalAlignment="Center" VerticalAlignment="Top" Margin="130,90,0,0" TextChanged="setTime_changed"></TextBox>
+        <TextBlock Text="set the break time:" FontSize="20" VerticalAlignment="Top" HorizontalAlignment="Center" Margin="0,155,100,0"></TextBlock>
+        <TextBox x:Name="setBreakTime" Text="5" HorizontalAlignment="Center" VerticalAlignment="Top" Margin="130,155,0,0"  TextChanged="setBreakTime_TextChanged"></TextBox>
+        <Button Content="OK" Click="Button_Click" VerticalAlignment="Top" HorizontalAlignment="Center" Margin="0,230,0,0" Width="100" Height="30" ></Button>
+        <Image Source="Assets\set your study time (4).png" HorizontalAlignment="Center" VerticalAlignment="Center" Margin="0,100,0,0"  ></Image>
+        <CommandBar  Opacity="0.7">
+            
+            
+            <CommandBar.SecondaryCommands>
+            <AppBarButton Icon="People" Label="Login" Click="Login_appbarbtn_Click"></AppBarButton>
+            <AppBarButton Icon="Calendar" Label="Statistics" Click="Statistics_appbarbtn_Click"></AppBarButton>
+            <AppBarButton Icon="Help" Label="About" Click="About_appbarbtn_Click"></AppBarButton>
+            </CommandBar.SecondaryCommands>
+
+        </CommandBar>
+    </Grid>
+</Page>

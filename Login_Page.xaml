@@ -1,0 +1,33 @@
+﻿<Page
+    x:Class="studytime.Login_Page"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:studytime"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    mc:Ignorable="d">
+
+    <Grid Background="CadetBlue">
+ 
+        <Image Source="Assets\SIGN YOURSELF UP!.png" VerticalAlignment="Top" HorizontalAlignment="Center" Width="400" Margin="30,100,0,0"></Image>
+        <TextBox x:Name="Username_box" PlaceholderText="Username" VerticalAlignment="Center" HorizontalAlignment="Center" Width="200" Margin="0,0,0,0"  ></TextBox>
+        <PasswordBox x:Name="Password_box" PlaceholderText="Password" VerticalAlignment="Center" HorizontalAlignment="Center" Width="200" Margin="0,100,0,0"  ></PasswordBox>
+        <Button x:Name="Loginbtn" VerticalAlignment="Center" Content="Login" HorizontalAlignment="Center" Margin="0,200,100,0" Width="100" Click="Loginbtn_Click"></Button>
+        <Button x:Name="Registerbtn" VerticalAlignment="Center" Content="Register" HorizontalAlignment="Center" Margin="100,200,0,0" Width="100" Click="Registerbtn_Click"></Button>
+
+
+        <CommandBar  Opacity="0.7">
+
+
+            <CommandBar.SecondaryCommands>
+                <AppBarButton x:Name="Settings_appbarbtn" Icon="Setting" Label="Settings" Click="Settings_appbarbtn_Click" ></AppBarButton>
+                <AppBarButton x:Name="Statistics_appbarbtn" Icon="Calendar" Label="Statistics" Click="Statistics_appbarbtn_Click"></AppBarButton>
+                <AppBarButton x:Name="About_appbarbtn" Icon="Help" Label="About" Click="About_appbarbtn_Click"></AppBarButton>
+            </CommandBar.SecondaryCommands>
+
+        </CommandBar>
+
+        
+
+    </Grid>
+</Page>

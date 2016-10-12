@@ -1,0 +1,27 @@
+﻿<Page
+    x:Class="studytime.About_Page"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:studytime"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    mc:Ignorable="d">
+
+    <Grid Background="CadetBlue">
+        <TextBlock Text="Version" VerticalAlignment="Top" HorizontalAlignment="Left" Margin="50,70,0,0"></TextBlock>
+        <TextBlock Text="1.0" VerticalAlignment="Top" HorizontalAlignment="Left" Margin="50,85"></TextBlock>
+        <Image Source="Assets\Get ready (3).png" VerticalAlignment="Top" HorizontalAlignment="Stretch" Margin="0,110,0,0" Height="28"     ></Image>
+
+
+        <CommandBar  Opacity="0.7">
+
+
+            <CommandBar.SecondaryCommands>
+                <AppBarButton Icon="People" Label="Login" Click="AppBarButton_Click_1"></AppBarButton>
+                <AppBarButton Icon="Calendar" Label="Statistics" Click="AppBarButton_Click_2"></AppBarButton>
+                <AppBarButton Icon="Setting" Label="Settings" Click="AppBarButton_Click"></AppBarButton>
+            </CommandBar.SecondaryCommands>
+
+        </CommandBar>
+    </Grid>
+</Page>
